@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--3D VIDEO BACKGROUND-->
+
+    <video class="background-video" autoplay muted loop playsinline>
+        <source src="background.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+
+    <!-- HEADER-->
+
+    <header class="header">
+        <h1>Image Gallery</h1>
+        <p> Explore beautiful moments</p>
+    </header>
+
+    <!-- FILTER BUTTONS -->
+     <nav class="filters">
+        <button class="filter-btn active" data-filter="all"> All </button>
+        <button class="filter-btn" data-filter="nature"> Nature </button>
+        <button class="filter-btn" data-filter="city"> City </button>
+        <button class="filter-btn" data-filter="travel"> Travel </button>
+    </nav>
+
+    <!-- GALLERY -->
+
+    <main class="gallery">
+        <!--CARD-1-->
+        <div class="gallery-card" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7" alt="Mountain Lanndscape">
+            <div class="card-info">
+                <h3>Mountain</h3>
+                <p>Nature</p>
+            </div>
+        </div>
+
+        <!--CARD-2-->
+        <div class="gallery-card"
+             data-category="travel">
+
+            <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+                alt="Beach">
+
+            <div class="card-info">
+
+                <h3>Beach</h3>
+
+                <p>Travel</p>
+
+            </div>
+
+        </div>
+
+        <!--CARD-3-->
+        <div class="gallery-card"
+             data-category="city">
+
+            <img
+                src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df"
+                alt="City">
+
+            <div class="card-info">
+
+                <h3>City Lights</h3>
+
+                <p>City</p>
+
+            </div>
+
+        </div>
+
+        <!--CARD-4-->
+        <div class="gallery-card"
+             data-category="nature">
+
+            <img
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
+                alt="Forest">
+
+            <div class="card-info">
+
+                <h3>Forest</h3>
+
+                <p>Nature</p>
+
+            </div>
+
+        </div>
+
+        <!--CARD-5-->
+        <div class="gallery-card"
+             data-category="city">
+
+            <img
+                src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000"
+                alt="Urban street">
+
+            <div class="card-info">
+
+                <h3>Urban Street</h3>
+
+                <p>City</p>
+
+            </div>
+
+        </div>
+
+        <!--CARD-6-->
+        <div class="gallery-card"
+             data-category="travel">
+
+            <img
+                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e"
+                alt="Travel landscape">
+
+            <div class="card-info">
+
+                <h3>Adventure</h3>
+
+                <p>Travel</p>
+
+            </div>
+
+        </div>
+
+        <!--CARD-7-->
+        <div class="gallery-card"
+             data-category="nature">
+
+            <img
+                src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"
+                alt="Lake">
+
+            <div class="card-info">
+
+                <h3>Lake View</h3>
+
+                <p>Nature</p>
+
+            </div>
+
+        </div>
+
+        <!--CARD-8-->
+        <div class="gallery-card"
+             data-category="city">
+
+            <img
+                src="https://images.unsplash.com/photo-1519501025264-65ba15a82390"
+                alt="City architecture">
+
+            <div class="card-info">
+
+                <h3>Architecture</h3>
+
+                <p>City</p>
+
+            </div>
+
+        </div>
+        
+    </main>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <button class="close-btn" id="closeBtn">&times;</button>
+        <button class="nav-btn prev" id="prevBtn">&#10094;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-info">
+                <h2 id="lightboxTitle"></h2>
+                <p id="lightboxCategory"></p>
+            </div>
+        </div>
+        <button class="nav-btn next" id="nextBtn">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
